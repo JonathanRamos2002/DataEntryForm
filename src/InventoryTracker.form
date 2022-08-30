@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="InventoryTracker">
+  <grid id="27dc6" binding="outerMostPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="23" y="55" width="1215" height="757"/>
+    </constraints>
+    <properties>
+      <minimumSize width="768" height="512"/>
+      <opaque value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6961a" binding="searchPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a1b34" class="javax.swing.JTextField" binding="searchByTextField" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <text value="Search By"/>
+            </properties>
+          </component>
+          <component id="b9809" class="javax.swing.JComboBox" binding="searchType">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="-select search type-"/>
+                <item value="Assigned User"/>
+                <item value="Model"/>
+                <item value="Serial Number"/>
+                <item value="Brand"/>
+                <item value="Storage"/>
+                <item value="Processor"/>
+                <item value="Office Version"/>
+                <item value="Installed Software"/>
+                <item value="Business Location"/>
+                <item value="Department"/>
+                <item value="Physical/Virtual"/>
+                <item value="Hardware"/>
+                <item value="Operating System"/>
+                <item value="Storage Type"/>
+                <item value="Ram"/>
+                <item value="Office Key"/>
+                <item value="Purchase Date"/>
+                <item value="Supplier"/>
+              </model>
+            </properties>
+          </component>
+          <component id="16228" class="javax.swing.JButton" binding="searchButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="search.png"/>
+              <text value="Search"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="1985a" binding="mainFunctionsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d3729" class="javax.swing.JButton" binding="addButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="5" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="plus.png"/>
+              <text value="Add"/>
+            </properties>
+          </component>
+          <component id="e939d" class="javax.swing.JButton" binding="editButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="edit.png"/>
+              <text value="Edit"/>
+            </properties>
+          </component>
+          <component id="ffcf0" class="javax.swing.JButton" binding="deleteButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="10"/>
+              <icon value="minus.png"/>
+              <text value="Delete"/>
+            </properties>
+          </component>
+          <component id="cbb5d" class="javax.swing.JButton" binding="accessFolderButton">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="folder.png"/>
+              <selectedIcon value="folder.png"/>
+              <text value="Choose Folder"/>
+              <verifyInputWhenFocusTarget value="false"/>
+            </properties>
+          </component>
+          <component id="3d2ec" class="javax.swing.JButton" binding="importCSVButton">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="excelAdd.png"/>
+              <selectedIcon value="excelAdd.png"/>
+              <text value="Import CSV "/>
+            </properties>
+          </component>
+          <component id="e68d6" class="javax.swing.JButton" binding="exportCSVButton">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="excelSave.png"/>
+              <text value="Export CSV "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <splitpane id="bbe96">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="76434" class="javax.swing.JTable" binding="table1" default-binding="true">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+          </component>
+          <tabbedpane id="bcac4" binding="tabbedPane1" default-binding="true">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="98c27" binding="dataEntryPanel" layout-manager="GridLayoutManager" row-count="10" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Data Entry"/>
+                </constraints>
+                <properties>
+                  <name value="Data Entry"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3610a" class="javax.swing.JTextField" binding="assignedUserTextField" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Assigned User"/>
+                    </properties>
+                  </component>
+                  <component id="1ae3e" class="javax.swing.JComboBox" binding="departmentsBox">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="-select department-"/>
+                        <item value="IT"/>
+                        <item value="Sales"/>
+                        <item value="Purchasing"/>
+                        <item value="Finances"/>
+                        <item value="Human Resources"/>
+                        <item value="Presidency"/>
+                        <item value="Reception"/>
+                        <item value="Transport"/>
+                        <item value="Operations"/>
+                        <item value="Warehouse"/>
+                        <item value="Invoice"/>
+                        <item value="Distributers"/>
+                        <item value="Other"/>
+                        <item value="N/A"/>
+                      </model>
+                      <requestFocusEnabled value="false"/>
+                    </properties>
+                  </component>
+                  <component id="13d6d" class="javax.swing.JComboBox" binding="hardwareBox">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="-select hardware-"/>
+                        <item value="Laptop"/>
+                        <item value="Desktop"/>
+                        <item value="Monitor"/>
+                        <item value="Printer"/>
+                        <item value="Server"/>
+                        <item value="Other"/>
+                        <item value="N/A"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="4fb59" class="javax.swing.JTextField" binding="modelTextField" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <name value="Model"/>
+                      <text value="Model"/>
+                    </properties>
+                  </component>
+                  <component id="68521" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="-select operating system-"/>
+                        <item value="Windows 8 Pro"/>
+                        <item value="Windows 8.1 Pro"/>
+                        <item value="Windows 10 Pro"/>
+                        <item value="Windows 11 Pro"/>
+                        <item value="Windows 8 Home"/>
+                        <item value="Windows 8.1 Home"/>
+                        <item value="Windows 10 Home"/>
+                        <item value="Windows 11 Home"/>
+                        <item value="Other"/>
+                        <item value="N/A"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="95ece" class="javax.swing.JTextField" binding="serialNumberTextField" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <opaque value="false"/>
+                      <text value="Serial Number"/>
+                    </properties>
+                  </component>
+                  <component id="db06e" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="-select one-"/>
+                        <item value="Virtual"/>
+                        <item value="Physical"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="2f24b" class="javax.swing.JTextField" binding="brandTextField" default-binding="true">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Brand"/>
+                    </properties>
+                  </component>
+                  <component id="8920" class="javax.swing.JComboBox" binding="storageTypeBox">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="-select storage type-"/>
+                        <item value="HDD"/>
+                        <item value="SSD"/>
+                        <item value="Other"/>
+                        <item value="N/A"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="62fd0" class="javax.swing.JTextField" binding="storageTextField" default-binding="true">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Storage "/>
+                    </properties>
+                  </component>
+                  <component id="6455c" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="-select office version-"/>
+                        <item value="Office 365"/>
+                        <item value="Office 2016 Home &amp; Business"/>
+                        <item value="Office 2019 Home &amp; Business"/>
+                        <item value="Office 2021 Home &amp; Business"/>
+                        <item value="Other"/>
+                        <item value="N/A"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="dc6ad" class="javax.swing.JTextField" binding="officeKeyTextField" default-binding="true">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Office Key"/>
+                    </properties>
+                  </component>
+                  <component id="c23e2" class="javax.swing.JTextField" binding="installedSoftwareTextField" default-binding="true">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Installed Software"/>
+                    </properties>
+                  </component>
+                  <component id="ed002" class="javax.swing.JTextField" binding="purchaseDateTextField" default-binding="true">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Purchase Date"/>
+                    </properties>
+                  </component>
+                  <component id="7724e" class="javax.swing.JTextField" binding="ramTextField" default-binding="true">
+                    <constraints>
+                      <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Ram"/>
+                    </properties>
+                  </component>
+                  <component id="23b8c" class="javax.swing.JTextField" binding="processorTextField">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Processor"/>
+                    </properties>
+                  </component>
+                  <component id="f40fd" class="javax.swing.JTextField" binding="businessLocationTextField" default-binding="true">
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Business Location "/>
+                    </properties>
+                  </component>
+                  <component id="d85e8" class="javax.swing.JTextField" binding="supplierTextField" default-binding="true">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Supplier "/>
+                    </properties>
+                  </component>
+                  <vspacer id="d5018">
+                    <constraints>
+                      <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="d9e74" binding="observationsPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Observations"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <hspacer id="539fd">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="5e068">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="57d38" class="javax.swing.JTextArea" binding="observationsNotesTextArea" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Observations &amp; Notes: "/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </splitpane>
+      <vspacer id="28a1a">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
