@@ -50,10 +50,10 @@ public class InventoryTracker extends JDialog{
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int screenWidth = screenSize.width;
         int screenHeight = screenSize.height;
-        String [] columnNames = {"Assigned User", "Department", "HardWare", "Physical/Virtual", "Model", "Serial Number", "Brand", "OS", "Ram",
+        /*String [] columnNames = {"Assigned User", "Department", "HardWare", "Physical/Virtual", "Model", "Serial Number", "Brand", "OS", "Ram",
                 "Storage", "Storage Type",	"Processor", "Office Version", "Office Product Key",
                 "Other Software", "Business Location", "Purchase Date",
-                "Observations", "Last Maintenance Date"};
+                "Observations", "Last Maintenance Date"};*/
         
 
 
