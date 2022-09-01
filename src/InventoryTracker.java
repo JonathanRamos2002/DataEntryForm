@@ -46,6 +46,8 @@ public class InventoryTracker extends JDialog{
     private JSplitPane mainContentSplitPane;
     private JScrollPane dataTablePane;
     private JButton saveButton;
+    private JButton clearAllButton;
+    private JButton updateButton;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
@@ -62,6 +64,8 @@ public class InventoryTracker extends JDialog{
         DefaultTableModel model = new DefaultTableModel(columnNames, 0);
         dataTable.setModel(model);
         dataEntryPanel.setPreferredSize(new Dimension(256,512));
+        dataTable.getTableHeader().setBackground(Color.LIGHT_GRAY);
+        dataTable.getTableHeader().setForeground(Color.BLACK);
 
 
 
@@ -193,7 +197,7 @@ public class InventoryTracker extends JDialog{
             }
         }
 
-        // Fills the text fields in dataEntryPanel with placeholder gray text
+        // Fills the combo box fields in dataEntryPanel with placeholder gray text
         for(Component component : dataEntryPanel.getComponents()){
             if(component instanceof JComboBox<?>){
                 JComboBox<?> componentJComboBox = ((JComboBox<?>) component);

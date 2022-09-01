@@ -196,7 +196,7 @@
               <title-color color="-4473925"/>
             </border>
             <children>
-              <grid id="98c27" binding="dataEntryPanel" layout-manager="GridLayoutManager" row-count="10" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="98c27" binding="dataEntryPanel" layout-manager="GridLayoutManager" row-count="13" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <tabbedpane title="Data Entry"/>
@@ -400,7 +400,7 @@
                   </component>
                   <vspacer id="d5018">
                     <constraints>
-                      <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </vspacer>
                   <component id="b6ffa" class="javax.swing.JTextField" binding="assignedUserTextField">
@@ -452,6 +452,26 @@
                       </model>
                       <name value="departmentBox"/>
                       <selectedIndex value="0"/>
+                    </properties>
+                  </component>
+                  <component id="c4d1" class="javax.swing.JButton" binding="updateButton">
+                    <constraints>
+                      <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalTextPosition value="10"/>
+                      <icon value="loop-2.png"/>
+                      <text value="Update"/>
+                    </properties>
+                  </component>
+                  <component id="1ec30" class="javax.swing.JButton" binding="clearAllButton" default-binding="true">
+                    <constraints>
+                      <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalTextPosition value="10"/>
+                      <icon value="delete.png"/>
+                      <text value="Clear All"/>
                     </properties>
                   </component>
                 </children>
