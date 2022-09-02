@@ -1,5 +1,8 @@
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        InventoryTracker tracker = new InventoryTracker(null);
+        JFrame parent = new JFrame();
+        InventoryTracker tracker = new InventoryTracker(parent);
     }
 }
